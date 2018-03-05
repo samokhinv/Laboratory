@@ -1,0 +1,13 @@
+set xlabel "x, לל"  font "Courier,16"
+set ylabel "V, לךֲ"  font "Courier,16"
+set border 3
+set xrange [-3:25]
+set yrange [0:110]
+set xtics nomirror
+set ytics nomirror
+set size 1,1
+set grid xtics ytics mxtics mytics
+set bmargin 4
+set lmargin 8
+			
+plot "C:/Users/Valentin/Documents/DCAM/ֻאבû/4/461/part2.txt" using 2:1 notitle 

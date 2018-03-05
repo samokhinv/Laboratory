@@ -1,0 +1,15 @@
+set xlabel "\alpha, ^{\circ}"  font "Courier,16"
+set ylabel "V, мк¬"  font "Courier,16"
+set border 3
+set xrange [0:1]
+set yrange [0:80]
+set xtics nomirror
+set ytics nomirror
+set size 1,1
+set grid xtics ytics mxtics mytics
+set bmargin 4
+set lmargin 8
+	
+f(x) = a*x
+fit f(x) "C:/Users/Valentin/Documents/DCAM/Ћабы/4/461/part1.txt" using 3:1 via a		
+plot "C:/Users/Valentin/Documents/DCAM/Ћабы/4/461/part1.txt" using 3:1 notitle, f(x) notitle with line
